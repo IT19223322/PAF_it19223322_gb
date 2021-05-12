@@ -186,8 +186,7 @@ public class customerpay {
 	 preparedStmt.execute(); 
 	 con.close(); 
 	 String newCustomer = viewCustomerpay();  
-	 output = "{\"status\":\"success\", \"data\": \"" + 
-	 newCustomer + "\"}";  
+	 output = "{\"status\":\"success\", \"data\": \"" + newCustomer + "\"}";  
 	 } 
 	 catch (Exception e) 
 	 { 
