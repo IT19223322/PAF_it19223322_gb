@@ -8,6 +8,8 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 
+<link rel="stylesheet" href="view/bootstrap.min.css">
+
 <script src="components/jquery-3.2.1.min.js"></script>
 <script src="components/customerpay.js"></script>
 
