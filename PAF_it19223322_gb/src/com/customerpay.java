@@ -10,6 +10,7 @@ public class customerpay {
 		 Connection con = null; 
 		 try
 		 { 
+			 //connecting to the mySql database
 			 Class.forName("com.mysql.cj.jdbc.Driver"); 
 			 con =  DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadget", "root", "abc123"); 
 			 
@@ -34,7 +35,7 @@ public class customerpay {
 	 return "Error while connecting to the database for reading."; 
 	 } 
 	 
-	 // Prepare the html table to be displayed
+	 // Prepare the html table to be displayed starts here
 	 output = "<table border='2'><tr><th>Card ID</th><th>Card Number</th><th>Name on Card</th>" +
 			 "<th>Expiration date</th>" +
 			 "<th>Cvv</th>" +
