@@ -169,10 +169,10 @@ public class customerpay {
 	 String output = ""; 
 	 try
 	 { 
-	 Connection con = connect(); 
+		Connection con = connect(); 
 	 if (con == null) 
 	 { 
-	 return "Error while connecting  to the database for deleting."; 
+		 return "Error while connecting  to the database for deleting."; 
 	 } 
 	 
 	 // create a prepared statement
