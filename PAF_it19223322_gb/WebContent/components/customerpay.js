@@ -38,7 +38,7 @@ var type = ($("#hidItemIDSave").val() == "") ? "POST" : "PUT";
  dataType : decodeURIComponent("text"), 
  complete : function(response, status) 
  { 
- onItemSaveComplete(response.responseText, status); 
+ onPaySaveComplete(response.responseText, status); 
  } 
  }); 
 });
@@ -62,7 +62,7 @@ $(document).on("click", ".btnRemove", function(event)
  dataType : "text", 
  complete : function(response, status) 
  { 
- onItemDeleteComplete(response.responseText, status); 
+ onPayDeleteComplete(response.responseText, status); 
  } 
  }); 
 });
@@ -70,7 +70,7 @@ $(document).on("click", ".btnRemove", function(event)
 
 
 
-function onItemSaveComplete(response, status)
+function onPaySaveComplete(response, status)
 { 
 if (status == "success") 
  { 
@@ -104,7 +104,7 @@ if (status == "success")
 
 
 
-function onItemDeleteComplete(response, status)
+function onPayDeleteComplete(response, status)
 { 
 if (status == "success") 
  { 
