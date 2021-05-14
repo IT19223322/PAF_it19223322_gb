@@ -18,7 +18,7 @@ $(document).on("click", "#btnSave", function(event)
  $("#alertError").hide(); 
  
  //Form validation-------------------
-var status = validateItemForm(); 
+var status = validatePayForm(); 
 if (status != true) 
  { 
  $("#alertError").text(status); 
@@ -131,7 +131,7 @@ if (status == "success")
 }
 
 
-function validateItemForm() {
+function validatePayForm() {
 
 	// CODE
 if ($("#Card_No").val().trim() == "") 
