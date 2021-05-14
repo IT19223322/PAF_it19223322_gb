@@ -11,8 +11,7 @@ public class customerpay {
 		 try
 		 { 
 			 Class.forName("com.mysql.cj.jdbc.Driver"); 
-			 con = 
-			 DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadget", "root", "abc123"); 
+			 con =  DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadget", "root", "abc123"); 
 			 
 		 } 
 		 catch (Exception e) 
